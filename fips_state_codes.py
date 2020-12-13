@@ -3,7 +3,7 @@ import pandas as pd
 
 def extract_codes():
 
-    print("Starting fips state codes processing...")
+    print("<< Starting fips state codes processing... >>")
 
     output_file = "ETL-Results/fips_state_codes.csv"
 
@@ -31,4 +31,4 @@ def extract_codes():
     print(f"writing fips state codes to {output_file}...")
     table_df.to_csv(output_file, index=False)
 
-    print("Completed fips state codes processing...")
+    print("<< Completed fips state codes processing... >>")
