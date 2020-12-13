@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 #ignore census key
 josh_census_key.py
+api_key.py
