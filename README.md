@@ -18,4 +18,4 @@
 
   - Infant mortality by zipcode
   - Use zipcode heatmap
-    -Possible filter for low average housdold incomes
+  - Possible filter for low average household incomes
