@@ -11,19 +11,19 @@ state_abbr PK VARCHAR(40)
 
 cms as c
 -
-cms_ID PK int AUTOINCREMENT
-facility_ID VARCHAR(40) 
-facility_Name VARCHAR(120)
+cms_id PK int AUTOINCREMENT
+facility_id VARCHAR(40) 
+facility_name VARCHAR(120)
 address VARCHAR(120)
 city VARCHAR(40)
 state VARCHAR(40) FK >- cs.state_abbr
-zip_Code VARCHAR(40)
-county_Name VARCHAR(120) FK >- cs.county_name
-measure_ID VARCHAR(80)
-measure_Name VARCHAR(120)
+zip_code VARCHAR(40)
+county_name VARCHAR(120) FK >- cs.county_name
+measure_id VARCHAR(80)
+measure_name VARCHAR(120)
 denominator INT
 score NUMERIC
-lower_Estimate NUMERIC
-higher_Estimate NUMERIC
-start_Date DATE
-end_Date DATE
+lower_estimate NUMERIC
+higher_estimate NUMERIC
+start_date DATE
+end_date DATE

@@ -17,27 +17,27 @@ CREATE TABLE "census" (
 );
 
 CREATE TABLE "cms" (
-    "cms_ID"  SERIAL  NOT NULL,
-    "facility_ID" VARCHAR(40)   NOT NULL,
-    "facility_Name" VARCHAR(120)   NOT NULL,
+    "cms_id"  SERIAL  NOT NULL,
+    "facility_id" VARCHAR(40)   NOT NULL,
+    "facility_name" VARCHAR(120)   NOT NULL,
     "address" VARCHAR(120)   NOT NULL,
     "city" VARCHAR(40)   NOT NULL,
     "state" VARCHAR(40)   NOT NULL,
-    "zip_Code" VARCHAR(40)   NOT NULL,
-    "county_Name" VARCHAR(120)   NOT NULL,
-    "measure_ID" VARCHAR(80)   NOT NULL,
-    "measure_Name" VARCHAR(120)   NOT NULL,
+    "zip_code" VARCHAR(40)   NOT NULL,
+    "county_name" VARCHAR(120)   NOT NULL,
+    "measure_id" VARCHAR(80)   NOT NULL,
+    "measure_name" VARCHAR(120)   NOT NULL,
     "denominator" INT   NOT NULL,
     "score" NUMERIC   NOT NULL,
-    "lower_Estimate" NUMERIC   NOT NULL,
-    "higher_Estimate" NUMERIC   NOT NULL,
-    "start_Date" DATE   NOT NULL,
-    "end_Date" DATE   NOT NULL,
+    "lower_estimate" NUMERIC   NOT NULL,
+    "higher_estimate" NUMERIC   NOT NULL,
+    "start_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
     CONSTRAINT "pk_cms" PRIMARY KEY (
-        "cms_ID"
+        "cms_id"
      )
 );
 
-ALTER TABLE "cms" ADD CONSTRAINT "fk_cms_state_county_Name" FOREIGN KEY("state", "county_Name")
+ALTER TABLE "cms" ADD CONSTRAINT "fk_cms_state_county_Name" FOREIGN KEY("state", "county_name")
 REFERENCES "census" ("state_abbr", "county_name");
 
