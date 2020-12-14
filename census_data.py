@@ -113,7 +113,7 @@ def census_data_api_extract():
 
     # Get the two letter state abbreviations
     census_df["State Abbr"] = census_df["State"].apply(state_abbr)
-
+    census_df['County Name'] = census_df['County Name'].str.upper()
     print(f"writing the census data to {output_file}")
 
     # Write census data to file
