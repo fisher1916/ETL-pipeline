@@ -11,15 +11,16 @@ state_abbr PK VARCHAR(40)
 
 cms as c
 -
-facility_ID PK VARCHAR(40) 
-facility_Name VARCHAR(40)
-address VARCHAR(40)
+cms_ID PK int AUTOINCREMENT
+facility_ID VARCHAR(40) 
+facility_Name VARCHAR(120)
+address VARCHAR(120)
 city VARCHAR(40)
 state VARCHAR(40) FK >- cs.state_abbr
 zip_Code VARCHAR(40)
-county_Name VARCHAR(40) FK >- cs.county_name
-measure_ID VARCHAR(40)
-measure_Name VARCHAR(40)
+county_Name VARCHAR(120) FK >- cs.county_name
+measure_ID VARCHAR(80)
+measure_Name VARCHAR(120)
 denominator INT
 score NUMERIC
 lower_Estimate NUMERIC

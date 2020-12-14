@@ -14,6 +14,8 @@ import os
 def county_split(x):
     if " Census Area, " in x:
         return x.split(" Census Area, ")
+    elif " Parish, " in x:
+        return x.split(" Parish, ")
     elif " County, " in x:
         return x.split(" County, ")
     else:
