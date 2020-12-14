@@ -38,6 +38,6 @@ CREATE TABLE "cms" (
      )
 );
 
-ALTER TABLE "cms" ADD CONSTRAINT "fk_cms_state_county_Name" FOREIGN KEY("state", "county_name")
+ALTER TABLE "cms" ADD CONSTRAINT "fk_cms_state_county_name" FOREIGN KEY("state", "county_name")
 REFERENCES "census" ("state_abbr", "county_name");
 
