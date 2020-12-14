@@ -133,3 +133,4 @@ api_key.py
 
 #ignore password
 password.py 
+db_info.py
