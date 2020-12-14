@@ -17,15 +17,16 @@ CREATE TABLE "census" (
 );
 
 CREATE TABLE "cms" (
+    "cms_ID"  SERIAL  NOT NULL,
     "facility_ID" VARCHAR(40)   NOT NULL,
-    "facility_Name" VARCHAR(40)   NOT NULL,
-    "address" VARCHAR(40)   NOT NULL,
+    "facility_Name" VARCHAR(120)   NOT NULL,
+    "address" VARCHAR(120)   NOT NULL,
     "city" VARCHAR(40)   NOT NULL,
     "state" VARCHAR(40)   NOT NULL,
     "zip_Code" VARCHAR(40)   NOT NULL,
-    "county_Name" VARCHAR(40)   NOT NULL,
-    "measure_ID" VARCHAR(40)   NOT NULL,
-    "measure_Name" VARCHAR(40)   NOT NULL,
+    "county_Name" VARCHAR(120)   NOT NULL,
+    "measure_ID" VARCHAR(80)   NOT NULL,
+    "measure_Name" VARCHAR(120)   NOT NULL,
     "denominator" INT   NOT NULL,
     "score" NUMERIC   NOT NULL,
     "lower_Estimate" NUMERIC   NOT NULL,
@@ -33,7 +34,7 @@ CREATE TABLE "cms" (
     "start_Date" DATE   NOT NULL,
     "end_Date" DATE   NOT NULL,
     CONSTRAINT "pk_cms" PRIMARY KEY (
-        "facility_ID"
+        "cms_ID"
      )
 );
 
