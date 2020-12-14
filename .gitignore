@@ -130,3 +130,6 @@ dmypy.json
 #ignore census key
 josh_census_key.py
 api_key.py
+
+#ignore password
+password.py 
