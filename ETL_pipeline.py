@@ -13,17 +13,17 @@ def process_pipleine():
     print(">>> Starting ETL processing... <<<")
 
     # Extract and clean fips state codes
-    # fsc.extract_codes()
+    fsc.extract_codes()
 
     # Read and Clean CMS Data
-    # cc.scrub_cms_data()
+    cc.scrub_cms_data()
 
     # Access Census API and pull income and population data
-    # cd.census_data_api_extract()
+    cd.census_data_api_extract()
 
     # ADD MY CODE HERE
     db.cms_data_load()
-    
+
     print(">>> Completed ETL processing... <<<")
 
 
