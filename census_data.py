@@ -14,6 +14,8 @@ import os
 def county_split(x):
     if " Census Area, " in x:
         return x.split(" Census Area, ")
+    elif " Parish, " in x:
+        return x.split(" Parish, ")
     elif " County, " in x:
         return x.split(" County, ")
     else:
@@ -113,7 +115,7 @@ def census_data_api_extract():
 
     # Get the two letter state abbreviations
     census_df["State Abbr"] = census_df["State"].apply(state_abbr)
-
+    census_df['County Name'] = census_df['County Name'].str.upper()
     print(f"writing the census data to {output_file}")
 
     # Write census data to file
