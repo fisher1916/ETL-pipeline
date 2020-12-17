@@ -1,25 +1,27 @@
 # Bootcamp-ETL-Project
 
-## Datasets
+## Summary
 
-- [Medicare Dataset for The nation](Resources/cms_data_2.csv)
-- 2010-2019 Census Population Dataset for the nation
+Knowing that mortality rates are at the forefront of current events, we extracted Medicare information and population data for use in
+ future projects. Our goal was to familiarize ourselves with the extract, transform and load processes. 
 
-## Field of Interests
+## Data
 
-- Star Rating
 - COPD Mortality (Chronic obstructive pulmonary disease)
 - HF Mortality (Heart Failure)
 - AMI Mortality (Acute Myocardial Infarction)
 - PN Mortality (Pneumonia)
-- Census population for Portland
+- Census population for United States
 
-## Agenda for this Data for Future use
+## Possible applications for future projects
 
-Infant mortality by zipcode
-
-- Use zipcode heatmap
+- Compare Oregon mortality rates per capita to the rest of the nation
+- Use heatmap to highlight where highest/lowest mortality rates are nationwide
 - Possible filter for low average household incomes
+- Compare mortality rates across McDonald's locations in the United States (specifically Big Mac consumption)
+
+## Project process
+
   For this project we pulled date from the CMS Data site as well as the census site. We hope to use this project as a staging and in helping to plan for the next project.
   This was our process:
 
@@ -45,7 +47,11 @@ Infant mortality by zipcode
 1. At that point we read the two CSV noted in step 5 to a new database to prepare the information for the ultimate pipeline. In this notebook we used SQL Alchemy to merge the two into one.
    - At this point there was an issue with the county names in the census and the county names in the CMS dataset so we went through and fixed those issues.
    - We then set it up to be able to create the pipeline
-1. Jay describe the pipeline
+1. End-to-end ETL pipeline process:
+   - Process and clean the fips_state_codes. 
+   - Process and clean the cms data.
+   - Process and clean the census data.
+   - Load all the above data into the mongo database.
 1. In order to recreate the data you would want in a SQL Query and the QRY to run do the following:
 
 ![ETL](images/ETL_diagram.png)
