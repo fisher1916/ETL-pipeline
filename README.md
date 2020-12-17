@@ -82,8 +82,16 @@ Example Query:
 [`QuickDBD-export.sql`](DDL/QuickDBD-export.sql) - This is the database table creation script for PgAdmin.
 
 
+## Execution
 
-
+1. Assumption is that you have a working postgres database and that you run the database table creation script against a database of your choice.
+1. Census API key needed. Must be named `api_key.py` with the value below: 
+   - key = "YOUR API KEY HERE"
+1. For the database configuration, you need a file named `db_info.py` with the values below:
+   - db_user = "YOUR DATABASE USERNAME"
+   - db_password = "YOUR DATABASE PASSWORD"
+   - db_name = "YOUR DATABASE NAME" 
+1. To execute the ETL pipeline, type: `python ETL_pipeline.py` at command line.
 
 
 
