@@ -55,9 +55,11 @@ Knowing that mortality rates are at the forefront of current events, we extracte
 1. In order to recreate the data, the ERD, SQL Query and the QRY diagram were executed, as seen below:
 
 Entity Relationship Diagram(ERD):
+
 ![ERD](images/ERDdb.JPG)
 
 Example Query:
+
 ![Query](images/query.png)
 
 ![ETL](images/ETL_diagram.PNG)
