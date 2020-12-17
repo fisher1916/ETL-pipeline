@@ -93,6 +93,14 @@ Example Query:
    - db_name = "YOUR DATABASE NAME" 
 1. To execute the ETL pipeline, type: `python ETL_pipeline.py` at command line.
 
+##Team
+
+- Jenny Kaylor
+- Joshua Gonzalez Williams
+- Jay Hastings
+- Erica Fisher
+- Courtney Muhlbach
+
 
 
 
