@@ -52,11 +52,16 @@ Knowing that mortality rates are at the forefront of current events, we extracte
    - Process and clean the cms data.
    - Process and clean the census data.
    - Load all the above data into the mongo database.
-1. In order to recreate the data you would want in a SQL Query and the QRY to run do the following:
+1. In order to recreate the data, the ERD, SQL Query and the QRY diagram were executed, as seen below:
+
+Entity Relationship Diagram(ERD):
+![ERD](images/ERDdb.JPG)
+
+Example Query:
+![Query](images/query.png)
 
 ![ETL](images/ETL_diagram.PNG)
 
-![ERD](images/ERDdb.JPG)
 
-![ERD](images/query.png)
+
 
