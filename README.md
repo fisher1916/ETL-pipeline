@@ -47,5 +47,5 @@ Infant mortality by zipcode
    - We then set it up to be able to create the pipeline
 1. Jay describe the pipeline
 1. In order to recreate the data you would want in a SQL Query and the QRY to run do the following:
-![Top Html](images/ETL_diagram.png)
-![Top Html](images/ERDdb.jpg)
+![ETL](images/ETL_diagram.png)
+![ERD](images/ERDdb.jpg)
