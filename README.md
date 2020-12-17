@@ -71,7 +71,7 @@ Example Query:
 
 [`ETL_pipeline.py`](ETL_pipeline.py) - This is the main program for running the automated ETL pipeline. 
 
-[`fips_state_code.py`](fips_state_code.py) - This package extracts and transforms the state codes as identified by the census.
+[`fips_state_codes.py`](fips_state_codes.py) - This package extracts and transforms the state codes as identified by the census.
 
 [`clean_cms.py`](clean_cms.py) - This package extracts and transforms CMS mortality data.
 
