@@ -30,8 +30,8 @@ For this project we pulled data from the CMS Data site as well as the census sit
 
 **This was our process:**
 
-1. We explored the available data on the CMS site and decided that looking at four measures for mortality were our primary focus. This was because this data was available for almost 100% of the hospitals in the database. This extracted as a CSV.
-1. We explored the data on the census site and discovered that the two datasets had aligned data for zip code, state, and county. This required the use of an API key and extracted as a CSV.
+1. We explored the available data on the CMS site and decided that looking at four measures for mortality were our primary focus. This was because this data was available for almost 100% of the hospitals in the database.
+1. We explored the data on the census site and discovered that the two datasets had aligned data for zip code, state, and county.
 1. We scraped the table on the census site to obtain the state codes.
 1. We pulled all the above-mentioned datasets into the repository.
 1. From there we used Jupyter Notebooks to clean and explore the data further.
