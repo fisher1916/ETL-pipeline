@@ -79,6 +79,7 @@ Example Query:
 
 [`cms_db.py`](cms_db.py) - This package does a final transformation and then loads the data into the database.
 
+[`QuickDBD-export.sql`](DDL/QuickDBD-export.sql) - This is the database table creation script for PgAdmin.
 
 
 
