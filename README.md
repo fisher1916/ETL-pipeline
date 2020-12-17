@@ -26,7 +26,7 @@ Knowing that mortality rates are at the forefront of current events, we extracte
 ![ETL](images/ETL_diagram.PNG)
 
 
-  For this project we pulled date from the CMS Data site as well as the census site. We hope to use this project as a staging and in helping to plan for the next project.
+  For this project we pulled data from the CMS Data site as well as the census site. We hope to use this project as a staging and in helping to plan for the next project.
   This was our process:
 
 1. We explored the available data on the CMS site and decided that looking at four measures for mortality were our primary focus. This was because this data was available for almost 100% of the hospitals in the database. This extracted as a CSV.
