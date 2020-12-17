@@ -38,25 +38,25 @@ For this project we pulled data from the CMS Data site as well as the census sit
    - For the CMS data we first created a notebook to do the following:
      - Read in the CMS data
      - Only bring in the columns we wanted
-     - Get rid of any null values if any but there were none.
-     - Removed all instances whereupon there not a score for a measure
-     - Removed all measures that were not the 4 measures we were interested in
-     - Exported to a new CSV
+     - Removed all instances where there was not a score for a measure
+     - Removed all unrelated measures
+     - Exported data to a new CSV
    - For the census data we created a notebook and did the following:
      - Read in the FIPS State codes and the census data
      - Brought in the columns we wanted
      - Created a for loop to create a dataframe with data we wanted
-     - Created a function to create a state abbreviation for every state
-     - Changed the county names to be all caps to match the county names in the CMS dataset.
+     - Created a function to transform cut unnecessary data from county names
+     - Created a function to transform the county names to all capital letters
+     - Imported a package to convert state names to two letter abbreviations
      - Exported to new csv
-1. At that point we read the two CSV noted in step 5 to a new database to prepare the information for the ultimate pipeline. In this notebook we used SQL Alchemy to merge the two into one.
-   - At this point there was an issue with the county names in the census and the county names in the CMS dataset so we went through and fixed those issues.
-   - We then set it up to be able to create the pipeline
+1. At that point we read the two CSV files mentioned in step 5 to a new database to prepare the information for the ETL_pipeline(the execution file). In this notebook we used SQL Alchemy to merge the two files into one.
+   - At this point there was an issue with the county names in the census and the county names in the CMS dataset, so we went through and fixed those issues.
+   - We then set it up to be able to create the ETL_pipeline
 1. End-to-end ETL pipeline process:
    - Process and clean the fips_state_codes. 
    - Process and clean the cms data.
    - Process and clean the census data.
-   - Load all the above data into the mongo database.
+   - Load all the above data into the Postgres database.
 1. In order to recreate the data, the ERD, SQL Query and the QRY diagram were executed, as seen below:
 
 Entity Relationship Diagram(ERD):
@@ -85,7 +85,7 @@ Example Query:
 
 ## Execution
 
-1. Assumption is that you have a working postgres database and that you run the database table creation script against a database of your choice.
+1. Assumption is that you have a working Postgres database and that you run the database table creation script(`QuickDBD-export.sql`) against a database of your choice.
 1. Census API key needed. Must be named `api_key.py` with the value below: 
    - key = "YOUR API KEY HERE"
 1. For the database configuration, you need a file named `db_info.py` with the values below:
