@@ -54,6 +54,6 @@ Knowing that mortality rates are at the forefront of current events, we extracte
    - Load all the above data into the mongo database.
 1. In order to recreate the data you would want in a SQL Query and the QRY to run do the following:
 
-![ETL](images/ETL_diagram.png)
+![ETL](images/ETL_diagram.PNG)
 
-![ERD](images/ERDdb.jpg)
+![ERD](images/ERDdb.JPG)
