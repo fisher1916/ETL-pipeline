@@ -57,3 +57,6 @@ Knowing that mortality rates are at the forefront of current events, we extracte
 ![ETL](images/ETL_diagram.PNG)
 
 ![ERD](images/ERDdb.JPG)
+
+![ERD](images/query.png)
+
