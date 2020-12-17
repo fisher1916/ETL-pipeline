@@ -67,6 +67,11 @@ Example Query:
 ![Query](images/query.png)
 
 
+## Files
+
+[`ETL_pipeline.py`](ETL_pipeline.py) - This is the main program for running the automated ETL pipeline. 
+
+
 
 
 
