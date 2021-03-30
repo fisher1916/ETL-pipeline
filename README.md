@@ -1,9 +1,9 @@
-# Bootcamp-ETL-Project
+# ETL-Pipeline
 
 ## Summary
 
 Knowing that mortality rates are at the forefront of current events, we extracted Medicare information and population data for use in
- future projects. Our goal was to familiarize ourselves with the extract, transform and load processes. 
+future projects and analysis. Our goal here is to extract, transform and load the data. 
 
 ## Data
 
